@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap');
+:root{
+  --fontFamily:'Rubik', sans-serif;
+  --primaryColor: #5f42e7;
+  --secondaryColor: black;
+  --fontSize: 1em;
+  --bs-body-bg: #232323 !important;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+html{
+  background-color: var(--bs-body-bg);
+}
+
+body{
+  font-family: var(--fontFamily) !important;
+  color: white !important;
+}
+
+.boton{
+  text-decoration: none;
+  color: white;
+  background-color: var(--primaryColor);
+  padding: 5px 15px;
+  font-size: 0.8em;
+  margin-left: 20px;
+  transition: 1s;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.boton:hover{
+  background-color: darkslateblue;
+  color: white !important;
+}

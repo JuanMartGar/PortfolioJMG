@@ -1,0 +1,28 @@
+<div class="card mb-3 bg-transparent text-light">
+  <div class="row g-0">
+    <figure class="col-12 col-md-4">
+      <img [src]="serie.imagen" [alt]="serie.titulo" class="img-fluid rounded-start">
+    </figure>
+    <div class="col-12 col-md-8">
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <h1 class="card-title">{{serie.titulo}}</h1>
+        <button class="boton border-0" [routerLink]="['/series']">Volver a series</button>
+        </div>     
+        <hr>
+
+        <p class="card-text">Director: <strong>{{serie.creador}}</strong></p>
+        <p class="card-text">Años de emisión: {{serie.fechas}}</p>
+        <p class="card-text">Se emiten en: <strong>{{serie.canal}}</strong></p>
+        <p class="card-text">Puntuación: <strong>{{serie.rating}}</strong></p>
+
+
+        <button class="boton" [routerLink]="['/serie', serie.id, 'reparto']">Reparto</button>
+        <button class="boton" [routerLink]="['/serie', serie.id, 'temporadas']">Temporadas</button>
+        <div class="m-4">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
