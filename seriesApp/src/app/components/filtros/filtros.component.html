@@ -1,0 +1,13 @@
+<div class="aside">
+  <ul class="nav flex-column">
+    <li class="nav-item" [routerLink]="['/series']">Series</li>
+    <li class="nav-item" [routerLink]="['/personajes']">Personajes</li>
+    <li *ngIf="activate">
+      <select class="form-select" (change)="capturarCanal($event)">
+        <option value="todas">Todas las cadenas</option>
+        <option *ngFor="let canal of arrCanales" [value]="canal">{{canal}}</option>
+      </select>
+    </li>
+  </ul>
+  <hr class="bg-light">
+</div>
