@@ -1,8 +1,0 @@
-<ul *ngIf="arrTemporadas.length >= 1; else bloqueElse">
-  <li *ngFor="let temporada of arrTemporadas">
-    {{temporada}}
-  </li>
-</ul>
-<ng-template #bloqueElse>
-  <p>No tiene temporadas</p>
-</ng-template>
